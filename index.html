@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fran Belac</title>
+    <link rel="stylesheet" href="./PersonalSite/styles.css" />
+    <script defer src="./PersonalSite/script.js"></script>
+  </head>
+  <body>
+    <div class="overlay overlay-slide-left" id="overlay">
+      <nav>
+        <ul>
+          <li id="nav-1" class="slide-out-1 center">
+            <a href="#home" class="center">Home</a>
+          </li>
+          <li id="nav-2" class="slide-out-2 center">
+            <a href="#about" class="center">About me</a>
+          </li>
+          <li id="nav-3" class="slide-out-3 center">
+            <a href="#skills" class="center">Skills & interests</a>
+          </li>
+          <li id="nav-4" class="slide-out-4 center">
+            <a href="#projects" class="center">Projects</a>
+          </li>
+          <li id="nav-5" class="slide-out-5 center">
+            <a href="#contact" class="center">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger-menu" id="hamburger-menu">
+      <div class="menu-bar1"></div>
+      <div class="menu-bar2"></div>
+      <div class="menu-bar3"></div>
+    </div>
+    <section id="home" class="center firstSection">
+      <a href="https://franbelac.com/" class="logo">Fran Belac</a>
+      <h1>Hi, I'm Fran!</h1>
+    </section>
+    <div class="secondSection" id="about">
+      <div id="leftDiv">
+        <h2 class="aboutMeText" id="aboutTitle">About Me</h2>
+        <p class="aboutMeText" id="aboutText">
+          I'm a comp sci student at FER, Zagreb. In my free time, I like to
+          learn about various fields of computing and math. Other hobbies
+          include but are not limited to tennis, basketball, watching football,
+          and of course the classics, going out and traveling. My friends also
+          know I'm a big fan of personal finance, and I'd love to enroll in an
+          MBA program after getting a master's degree.
+        </p>
+      </div>
+      <div id="rightDiv">
+        <img
+          src="./PersonalSite/resources/blurry.jpg"
+          data-src="./PersonalSite/resources/malarezolucija.jpg"
+          alt="my personal image"
+          class="personalImg"
+        />
+      </div>
+    </div>
+
+    <div class="thirdSection" id="skills">
+      <h3 class="skillsTitle">Skills & Interests</h3>
+      <div class="skillsWrapper">
+        <div class="skillsText interest">
+          <p>
+            I have some basic experience in C, C++ and Python. Java and
+            JavaScript are currently the languages of choice when it comes to
+            projects. Other non-programming languages that I'm familiar with are
+            HTML, CSS, JSON, XML and so on. I'm also no stranger to various
+            tools a programmer uses on a daily basis so I'm quite comfortable
+            with different text editors and IDE's (many jetbrains tools, VSC,
+            Atom). Also, while learning new things I've come across some other
+            tools such as Maven for java projects, Postman for testing server
+            side applications, and of course Git with Github for version
+            control.
+          </p>
+        </div>
+        <div class="firstIcons interest">
+          <img
+            src="./PersonalSite/resources/svgs/java-brands.svg"
+            alt="static assets image"
+            class="javaImage skillsSVG"
+          />
+        </div>
+        <div class="secondIcons skillsIcons interest">
+          <img
+            src="./PersonalSite/resources/svgs/js-brands.svg"
+            alt="js svg"
+            class="jsImage skillsSVG"
+          />
+        </div>
+        <div class="interestsText interest">
+          <p>
+            My future interests include many fields. I'm currently learning
+            Kotlin and Android development, and would love to get into data
+            analysis as soon as possible. The field of machine learning and
+            artificial intelligence looks really appealing to anyone with an
+            interest for statistics such as myself. However, software
+            development is the backbone of all these other technologies so I
+            will continue to Improve in this field as well.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="fourthSection" id="projects">
+      <h4 class="projectsTitle">Projects</h4>
+      <div class="fergoDiv">
+        <div class="fergTxt">
+          <img
+            src="./PersonalSite/resources/izrezani.png"
+            alt="logo of the application"
+            class="fergLogo"
+          />
+          <p class="fergPar">
+            FerGO is a desktop application for managing large indoor rowing
+            events. It simplifies the entire process from beginning to end. I
+            worked on this with a friend and we intend to use it for
+            Fergometrijada, my faculty's proprietary indoor regatta. It was
+            built using JavaFX, the Apache POI library and Maven.
+          </p>
+        </div>
+        <img
+          src="./PersonalSite/resources/skrin.png"
+          alt="image of the application"
+          class="fergoImg"
+        />
+      </div>
+      <div class="toBeContinued">
+        <h5>I'm looking forward to expanding this section soon! :)</h5>
+      </div>
+    </div>
+    <div class="fifthSection">
+      <div class="footerTxt">
+        <h6 class="footerTitle">Feel free to contact me</h6>
+        <p class="footerPar">
+          I'm always open to new ideas and business offers.
+        </p>
+      </div>
+      <div class="mailDiv">
+        <a href="mailto:fran.belac@gmail.com" class="mail"
+          >fran.belac@gmail.com</a
+        >
+      </div>
+      <div class="gitLinked">
+        <a href="https://github.com/franBelac"
+          ><img
+            src="./PersonalSite/resources/github (1).png"
+            alt="github icon"
+            class="icons"
+        /></a>
+        <a href="https://www.linkedin.com/in/fran-belac/"
+          ><img
+            src="./PersonalSite/resources/linkedin-logo (1).png"
+            alt="linkedin icon"
+            class="icons"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>
