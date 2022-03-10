@@ -336,6 +336,7 @@ span {
 .interest {
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .jsImage {
