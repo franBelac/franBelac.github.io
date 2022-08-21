@@ -1,0 +1,106 @@
+.personal-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.personal-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.personal-row img {
+  width: 130px;
+  height: 130px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.personal-text {
+  padding: 15px;
+  margin: 10px;
+}
+
+.personal-gallery {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+@media only screen and (max-width: 860px) {
+  .personal-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .personal-row img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .personal-row img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.personal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-links {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.personal-links img {
+    height: 250px;
+      width: 250px;
+}
+
+.personal-filler {
+  width: 200px;
+}
+
+.personal-mail {
+  padding: 50px;
+  font-size: 70px;
+}
+
+@media only screen and (max-width: 500px) {
+  .personal-filler {
+    width: 100px;
+  }
+
+    .personal-links img {
+      height: 150px;
+      width: 150px;
+    }
+
+    .personal-mail {
+      font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+  .personal-filler {
+    width: 50px;
+  }
+
+  .personal-links img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .personal-mail {
+    font-size: 20px;
+  }
+}
+

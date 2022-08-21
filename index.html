@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fran Belac</title>
-    <link rel="stylesheet" href="./PersonalSite/styles.css" />
-    <script defer src="./PersonalSite/script.js"></script>
     <meta name="description" content="Personal website by Fran Belac" />
     <link
       rel="apple-touch-icon"
@@ -44,130 +42,486 @@
       sizes="512x512"
       href="./PersonalSite/resources/favicon/android-chrome-512x512.png"
     />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./PersonalSite/resources/custom.css" />
   </head>
   <body>
-    <div class="overlay overlay-slide-left" id="overlay">
-      <nav>
-        <ul>
-          <li id="nav-1" class="slide-out-1 center">
-            <a href="#home" class="center">Home</a>
-          </li>
-          <li id="nav-2" class="slide-out-2 center">
-            <a href="#about" class="center">About me</a>
-          </li>
-          <li id="nav-3" class="slide-out-3 center">
-            <a href="#skills" class="center">Skills & interests</a>
-          </li>
-          <li id="nav-4" class="slide-out-4 center">
-            <a href="#projects" class="center">Projects</a>
-          </li>
-          <li id="nav-5" class="slide-out-5 center">
-            <a href="#contact" class="center">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="hamburger-menu" id="hamburger-menu">
-      <div class="menu-bar1"></div>
-      <div class="menu-bar2"></div>
-      <div class="menu-bar3"></div>
-    </div>
-    <section id="home" class="center firstSection">
-      <a href="https://franbelac.com/" class="logo">Fran Belac</a>
-      <h1>Hi, I'm Fran!</h1>
+    <nav class="navbar bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">Fran Belac</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Navigation
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#interests">Interests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="container-lg">
+              <div
+                class="row justify-content-center align-items-center my-lg-5 p-5"
+              >
+                <div class="col-lg text-center text-md-start my-sm-3 p-3">
+                  <h1>
+                    <div class="display-1">Fran Belac</div>
+                    <div class="display-4 text-muted">Computing student</div>
+                  </h1>
+                  <p class="lead my-lg-5">
+                    Hi, welcome to my personal site. I wanted to introduce
+                    myself and thought this was a good way to do it. I'm an
+                    ambitious student at FER, Zagreb and below you can find my
+                    areas of interest and some skills I've picked up along the
+                    way.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <img
+              src="./PersonalSite/resources/malarezolucija-modified.png"
+              alt="Personal Image"
+              class="img-fluid p-lg-5 my-lg-5"
+            />
+          </div>
+        </div>
+      </div>
     </section>
-    <div class="secondSection" id="about">
-      <div id="leftDiv">
-        <h2 class="aboutMeText" id="aboutTitle">About Me</h2>
-        <p class="aboutMeText" id="aboutText">
-          I'm a comp sci student at FER, Zagreb. In my free time, I like to
-          learn about various fields of computing and math. Other hobbies
-          include but are not limited to tennis, basketball, watching football,
-          and of course the classics, going out and traveling. My friends also
-          know I'm a big fan of personal finance, and I'd love to enroll in an
-          MBA program after getting a master's degree.
+
+    <section id="skills" class="p-5">
+      <div class="container text-center">
+        <h2 class="display-2">Skills</h2>
+        <hr />
+      </div>
+      <div class="accordion p-5" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Programming Languages
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h3>JavaScript</h3>
+              <p>
+                I've started learning JavaScript after the first year of college
+                and feel comfortable with it. The fact that you can make an
+                entire full-stack web application with it is a great thing. The
+                only thing I'm not fond of is that it is weakly typed. Too much
+                type inference is a recipe for disaster.
+              </p>
+              <h3>Java</h3>
+              <p>
+                During the first year of college I was introduced to Java and
+                immediately loved how simple it made building more complex
+                things. It is far from a perfect language, but it made coding
+                fun for me and it also has a great community behind it.
+              </p>
+              <h3>Kotlin</h3>
+              <p>
+                Now we're talking. This is currently my favorite language. It
+                picks up ideas that worked with Java and then improves
+                everything that was done wrong. It is far less verbose, it has
+                higher order functions etc. I would love to have a job where the
+                main focus is Kotlin.
+              </p>
+              <h3>C</h3>
+              <p>
+                I've first seen this language in high school but fell in love
+                with it in college when we did some more practical things with
+                it. In my opinion learning C first is a really good idea as you
+                get a deeper understanding of how data structures look like in
+                memory. The same goes for Assembler. Although I prefer coding in
+                higher level Languages, C gave me a deeper understanding of
+                programming in general.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Web technologies
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h3>Node.js</h3>
+              <p>
+                Node was a really great introduction into backend development.
+                It taught me a lot of the core concepts of how to build a web
+                server. It's the technology I would use on smaller projects.
+              </p>
+              <h3>Vue.js</h3>
+              <p>
+                Vue is a fantastic first reactive framework to learn. It is
+                super simple to use and debug. It has shown me that frontend
+                development can be fun.
+              </p>
+              <h3>Spring Boot</h3>
+              <p>
+                I've started learning Spring Boot in Infinum Academy. Building
+                web services in Spring is quite enjoyable, the dependency
+                injection and auto wiring aspects remind me of playing with Lego
+                bricks. In my opinion the strictness of Java really comes into
+                play here, debugging is a breeze.
+              </p>
+              <h3>PostgreSQL</h3>
+              <p>
+                I was taught Postgres in college, and while I don't have nearly
+                enough experience with databases in general, I can't find
+                complaints regarding Postgres. It just works. I'm a big fan
+                relational databases.
+              </p>
+              <h3>MongoDB</h3>
+              <p>
+                MongoDB was my introduction to NoSQL and I've gotta say, it is
+                pretty great for some use cases. Both Postgres and Mongo have
+                pretty good APIs for Java and JavaScript and make working with
+                databases quite easy to understand.
+              </p>
+              <h3>HTML & CSS</h3>
+              <p>
+                I'm OK with HTML. Not much to say there. However CSS is not my
+                favorite technology. I'm just not that good at design and
+                technologies like CSS are not my strong point. Sass makes it a
+                lot better though, but most of all I just like to use Bootstrap.
+                I will say this though. I've had to use some CSS during an
+                internship, and after a couple of days it actually starts making
+                perfect sense. Still, I'll avoid it in the future.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Tools
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h3>Git</h3>
+              <p>
+                I've used Git since first year of college and I'm quite
+                comfortable with it. I can't say I mastered it though, there is
+                always something new to learn. For example, did you know that
+                Git doesn't track folders, only files? Well, you probably did.
+                My mind was blown when I found out.
+              </p>
+              <h3>GitHub</h3>
+              <p>
+                This is just a really good piece of software. Definitely my
+                repository of choice. Whether I have basic repository needs, or
+                hosting with GitHub pages, it is always a pleasant experience.
+              </p>
+              <h3>Visual Studio Code</h3>
+              <p>
+                I'm a big fan of VSCode. You can really make a beautiful editor
+                if you play around with settings and plugins. It is super useful
+                and lightweight. What a great tool for programmers of all levels
+                of seniority. And it's an Electron app that doesn't suck. What
+                more could you want?
+              </p>
+              <h3>IntelliJ</h3>
+              <p>
+                This is just unmatched support in programming. I explore new
+                features of this powerful app every day and it still feels like
+                overkill. That's not even a bad thing in this case. If I had to
+                pick one IDE to use, I'd pick IntelliJ.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Wishlist
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h3>Docker</h3>
+              <p>
+                I've used some Docker but I feel there is still much to learn.
+                The whole DevOps field with Ansible, Kubernetes etc. seems
+                really interesting.
+              </p>
+              <h3>Apache Kafka</h3>
+              <p>
+                This was my intro into messaging systems, but I haven't used it
+                as much as I'd like. It seems really interesting though.
+              </p>
+              <h3>Python</h3>
+              <p>
+                OK, I know how to use Python. But I don't feel like I've
+                mastered it. And that's gonna change soon.
+              </p>
+              <h3>Apache Spark</h3>
+              <p>
+                I don't plan on becoming a data analyst but the entire data
+                field in computer science seems really cool and I would like to
+                learn about the tools.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests" class="interests my-5">
+      <div class="container text-center">
+        <h2 class="display-2">Interests</h2>
+        <hr />
+      </div>
+      <div class="personal-wrap p-md-5">
+        <div class="personal-text">
+          <h2 class="display-4">Backend Development</h2>
+          <p class="lead">
+            After two years of college, backend development is the field I'm
+            most interested in. I'm enthusiastic about design patterns and
+            software architecture, as well as the development of microservices.
+            The "How it works" is a lot more interesting to me than the "How it
+            looks". Therefore I would also like to step into the world of
+            DevOps.
+          </p>
+        </div>
+        <div class="personal-gallery">
+          <div>
+            <div class="personal-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
+                loading="lazy"
+              />
+            </div>
+            <div class="personal-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                loading="lazy"
+              />
+            </div>
+            <div class="personal-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="personal-wrap p-md-5">
+        <div class="personal-text">
+          <h2 class="display-4">Data Analysis & AI</h2>
+          <p class="lead">
+            I'm interested in data analysis, AI, machine learning etc. These
+            fields aren't where I see myself working, but they are the future
+            (and present) of app development. It doesn't matter if you're using
+            GitHub Copilot while coding a basic website, or some data analysis
+            tool while coding a complex application, these tools are here to
+            stay, and I would like to understand what's going on.
+          </p>
+        </div>
+        <div class="personal-gallery">
+          <div>
+            <div class="personal-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                loading="lazy"
+              />
+            </div>
+            <div class="personal-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg"
+                loading="lazy"
+              />
+            </div>
+            <div class="personal-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="display-2 text-center">About</h2>
+
+        <hr />
+
+        <p class="lead">
+          OK, now you've seen what I'm interested in. However, there is more. Go
+          check out my GitHub and see what I've been playing with, or take a
+          look at my LinkedIn for much more. I'm also open to any questions so
+          feel free to contact me.
         </p>
       </div>
-      <div id="rightDiv">
-        <img
-          src="./PersonalSite/resources/blurry.jpg"
-          data-src="./PersonalSite/resources/malarezolucija.jpg"
-          alt="my personal image"
-          class="personalImg"
-        />
+      <div class="personal-card">
+        <div class="personal-links">
+          <a href="https://github.com/franBelac">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            />
+          </a>
+          <div class="personal-filler"></div>
+          <a href="https://hr.linkedin.com/in/fran-belac">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+            />
+          </a>
+        </div>
+        <div class="personal-mail">fran.belac@gmail.com</div>
       </div>
-    </div>
-
-    <div class="thirdSection" id="skills">
-      <h3 class="skillsTitle">Skills & Interests</h3>
-      <div class="skillsWrapper">
-        <div class="skillsText interest">
-          <p>
-            I have some basic experience in C, C++ and Python. Java and
-            JavaScript are currently the languages of choice when it comes to
-            projects. Other non-programming languages that I'm familiar with are
-            HTML, CSS, JSON, XML and so on. I'm also no stranger to various
-            tools a programmer uses on a daily basis so I'm quite comfortable
-            with different text editors and IDE's (many jetbrains tools, VSC,
-            Atom). Also, while learning new things I've come across some other
-            tools such as Maven for java projects, Postman for testing server
-            side applications, and of course Git with Github for version
-            control.
-          </p>
-        </div>
-        <div class="firstIcons interest">
-          <img
-            src="./PersonalSite/resources/svgs/java-brands.svg"
-            alt="static assets image"
-            class="javaImage skillsSVG"
-          />
-        </div>
-        <div class="secondIcons skillsIcons interest">
-          <img
-            src="./PersonalSite/resources/svgs/js-brands.svg"
-            alt="js svg"
-            class="jsImage skillsSVG"
-          />
-        </div>
-        <div class="interestsText interest">
-          <p>
-            My future interests include many fields. I'm currently learning
-            Kotlin and Android development, and would love to get into data
-            analysis as soon as possible. The field of machine learning and
-            artificial intelligence looks really appealing to anyone with an
-            interest for statistics such as myself. However, software
-            development is the backbone of all these other technologies so I
-            will continue to Improve in this field as well.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="fourthSection" id="projects">
-      <h4 class="projectsTitle">Projects</h4>
-      <div class="fergoDiv">
-        <div class="fergTxt">
-          <img
-            src="./PersonalSite/resources/izrezani.png"
-            alt="logo of the application"
-            class="fergLogo"
-          />
-          <p class="fergPar">
-            FerGO is a desktop application for managing large indoor rowing
-            events. It simplifies the entire process from beginning to end. I
-            worked on this with a friend and we intend to use it for
-            Fergometrijada, my faculty's proprietary indoor regatta. It was
-            built using JavaFX, the Apache POI library and Maven.
-          </p>
-        </div>
-        <img
-          src="./PersonalSite/resources/skrin.png"
-          alt="image of the application"
-          class="fergoImg"
-        />
-      </div>
-      <div class="toBeContinued">
-        <h5>I'm looking forward to expanding this section soon! :)</h5>
-      </div>
-    </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
