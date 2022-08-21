@@ -87,6 +87,11 @@ justify-content: center;
     .personal-mail {
       font-size: 40px;
     }
+
+    #accordionExample {
+padding-left: 0;
+padding-right: 0;
+    }
 }
 
 @media only screen and (max-width: 860px) {
